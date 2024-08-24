@@ -1,0 +1,11 @@
+import numpy as np
+
+# 坡度和坡向的计算
+def compute_slope_aspect(dem):
+    dz_dx = np.gradient(dem, axis=1)
+    dz_dy = np.gradient(dem, axis=0)
+
+    slope = np.arctan(np.sqrt(dz_dx ** 2 + dz_dy ** 2))
+    aspect = np.arctan2(dz_dy, -dz_dx)
+
+    return slope, aspect
