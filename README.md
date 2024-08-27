@@ -1,1 +1,2 @@
-## A multi-terrain feature-based deep convolutional neural network for constructing super-resolution DEMs 论文的复现
+## A multi-terrain feature-based deep convolutional neural network for constructing super-resolution DEMs
+# Author Xun Wang and Zhecheng Shi
